@@ -1,65 +1,212 @@
-import Image from "next/image";
+import Button from "@/app/components/Button";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-pastel-green-light via-white to-pastel-yellow-light py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+                Tech Literacy for{" "}
+                <span className="text-pastel-green-dark">Every Kid</span>
+              </h1>
+              <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl">
+                Empowering the next generation through hands-on coding workshops
+                in under-resourced communities, powered by Raspberry Pi
+              </p>
+              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button href="/get-involved#volunteer" variant="primary" size="lg">
+                  Volunteer With Us
+                </Button>
+                <Button href="/get-involved#host" variant="secondary" size="lg">
+                  Host a Workshop
+                </Button>
+                <Button href="/get-involved#donate" variant="outline" size="lg">
+                  Donate Now
+                </Button>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="bg-pastel-yellow rounded-2xl p-8 shadow-lg">
+                <div className="aspect-video bg-pastel-cream rounded-lg flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="w-24 h-24 mx-auto bg-pastel-green rounded-full flex items-center justify-center mb-4">
+                      <span className="text-4xl">🖥️</span>
+                    </div>
+                    <p className="text-gray-600">Kids collaborating on Raspberry Pi projects</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+      </section>
+
+      {/* Highlight Reel */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+            Our Impact in Action
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Workshop Photo Cards */}
+            <div className="bg-pastel-green-light rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-6xl">👨‍💻</span>
+              </div>
+              <p className="text-gray-600 text-sm">Coding workshop at Community Center</p>
+            </div>
+            <div className="bg-pastel-yellow-light rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-6xl">🎓</span>
+              </div>
+              <p className="text-gray-600 text-sm">Students presenting their projects</p>
+            </div>
+            <div className="bg-pastel-red-light rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-6xl">🤝</span>
+              </div>
+              <p className="text-gray-600 text-sm">Volunteer mentoring session</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-16 bg-pastel-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+            What People Are Saying
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <TestimonialCard
+              quote="I never thought I could code, but now I've made my own game!"
+              author="Jordan, Age 12"
+              role="Student"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <TestimonialCard
+              quote="Pi Kids gave my daughter confidence she never had before."
+              author="Maria S."
+              role="Parent"
+            />
+            <TestimonialCard
+              quote="Teaching here has been the most rewarding experience of my life."
+              author="Alex T."
+              role="Volunteer"
+            />
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Important Updates */}
+      <section className="py-16 bg-pastel-yellow-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-pastel-red">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-pastel-red rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl">📢</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  Seeking New Volunteers for Winter Term
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Join our team and help us bring tech education to more kids this winter. 
+                  No coding experience required – just a passion for helping children learn!
+                </p>
+                <Button href="/get-involved#volunteer" variant="primary" size="sm">
+                  Apply Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Stats Preview */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+            Our Impact
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <StatCard number="500+" label="Students Taught" icon="👨‍🎓" />
+            <StatCard number="1,200+" label="Hours Volunteered" icon="⏰" />
+            <StatCard number="12" label="Cities Served" icon="🏙️" />
+            <StatCard number="85%" label="Low-Income Students" icon="❤️" />
+          </div>
+          <div className="text-center mt-12">
+            <Button href="/about" variant="outline">
+              Learn More About Our Impact
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-pastel-green to-pastel-yellow">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Ready to Make a Difference?
+          </h2>
+          <p className="text-xl text-gray-700 mb-8">
+            Every child deserves access to technology education. Join us in making it happen.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/get-involved" variant="primary" size="lg">
+              Get Involved Today
+            </Button>
+            <Button href="/contact" variant="outline" size="lg">
+              Contact Us
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function TestimonialCard({
+  quote,
+  author,
+  role,
+}: {
+  quote: string;
+  author: string;
+  role: string;
+}) {
+  return (
+    <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <div className="mb-4">
+        <span className="text-4xl text-pastel-green">&ldquo;</span>
+      </div>
+      <p className="text-gray-600 mb-4 italic">{quote}</p>
+      <div>
+        <p className="font-semibold text-gray-800">{author}</p>
+        <p className="text-sm text-gray-500">{role}</p>
+      </div>
+    </div>
+  );
+}
+
+function StatCard({
+  number,
+  label,
+  icon,
+}: {
+  number: string;
+  label: string;
+  icon: string;
+}) {
+  return (
+    <div className="text-center">
+      <div className="w-16 h-16 mx-auto bg-pastel-green-light rounded-full flex items-center justify-center mb-4">
+        <span className="text-2xl">{icon}</span>
+      </div>
+      <p className="text-3xl font-bold text-gray-800">{number}</p>
+      <p className="text-gray-600">{label}</p>
     </div>
   );
 }
