@@ -22,7 +22,7 @@ export default function Home() {
               </h1>
               <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl">
                 Empowering the next generation through hands-on coding workshops
-                in under-resourced communities, powered by Raspberry Pi
+                in under-resourced communities, powered by Raspberry Pi TEST
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button href="/get-involved#volunteer" variant="primary" size="lg">
