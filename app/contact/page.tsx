@@ -206,9 +206,14 @@ export default function ContactPage() {
               <p className="mt-4 text-gray-600">
                 123 Education Way, Learning City, CA 90210
               </p>
-              <p className="text-sm text-gray-500 mt-2">
-                Map integration coming soon
-              </p>
+              <a 
+                href="https://maps.google.com/?q=123+Education+Way+Learning+City+CA+90210"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 text-pastel-green-dark hover:underline"
+              >
+                Get Directions →
+              </a>
             </div>
           </div>
         </div>

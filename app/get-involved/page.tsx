@@ -237,8 +237,11 @@ export default function GetInvolvedPage() {
               Donate Now (Coming Soon)
             </Button>
             <p className="text-sm text-gray-500 mt-4">
-              Secure payment processing coming soon. Contact us directly to
-              donate.
+              Online donations coming soon! In the meantime, please email{" "}
+              <a href="mailto:donate@pikids.org" className="text-pastel-green-dark hover:underline">
+                donate@pikids.org
+              </a>{" "}
+              or call (555) 123-4567 to make a donation.
             </p>
           </div>
         </div>
