@@ -2,25 +2,65 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #333333;
+  
+  /* Pastel Color Palette */
+  --pastel-green: #A8E6CF;
+  --pastel-green-light: #DFFFD8;
+  --pastel-green-dark: #7BC9A0;
+  
+  --pastel-yellow: #FFE5B4;
+  --pastel-yellow-light: #FFF8E7;
+  --pastel-yellow-dark: #FFD28C;
+  
+  --pastel-red: #FFADAD;
+  --pastel-red-light: #FFD6D6;
+  --pastel-red-dark: #FF8585;
+  
+  --pastel-cream: #FFFDF7;
+  --pastel-sage: #B4D4C0;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  
+  --color-pastel-green: var(--pastel-green);
+  --color-pastel-green-light: var(--pastel-green-light);
+  --color-pastel-green-dark: var(--pastel-green-dark);
+  
+  --color-pastel-yellow: var(--pastel-yellow);
+  --color-pastel-yellow-light: var(--pastel-yellow-light);
+  --color-pastel-yellow-dark: var(--pastel-yellow-dark);
+  
+  --color-pastel-red: var(--pastel-red);
+  --color-pastel-red-light: var(--pastel-red-light);
+  --color-pastel-red-dark: var(--pastel-red-dark);
+  
+  --color-pastel-cream: var(--pastel-cream);
+  --color-pastel-sage: var(--pastel-sage);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid var(--pastel-green-dark);
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background-color: var(--pastel-yellow);
+  color: var(--foreground);
 }
