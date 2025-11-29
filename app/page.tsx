@@ -1,9 +1,17 @@
+// Shared Button component for CTAs and navigation
 import Button from "@/app/components/Button";
 
+// Home page: high-level overview with hero, highlights,
+// testimonials, updates, impact preview, and CTA. Comments
+// describe each section's purpose and layout for maintainers.
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section
+        - Purpose: Primary headline and quick mission framing.
+        - Layout: Two-column grid with text and illustrative card.
+        - Design: Brand gradient and responsive typography.
+      */}
       <section className="relative bg-gradient-to-br from-pastel-green-light via-white to-pastel-yellow-light py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -44,7 +52,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Highlight Reel */}
+      {/* Highlight Reel
+        - Purpose: Visual snapshots of program activities.
+        - Content: Three simple cards with emoji placeholders.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
@@ -74,7 +85,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials
+        - Purpose: Social proof from students, parents, volunteers.
+        - Component: `TestimonialCard` for consistent formatting.
+      */}
       <section className="py-16 bg-pastel-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
@@ -100,7 +114,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Important Updates */}
+      {/* Important Updates
+        - Purpose: Announcements (e.g., recruiting volunteers).
+        - Visual: Accent border and icon to draw attention.
+      */}
       <section className="py-16 bg-pastel-yellow-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-pastel-red">
@@ -125,7 +142,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact Stats Preview */}
+      {/* Impact Stats Preview
+        - Purpose: Teaser metrics; links to full details on About.
+        - Component: `StatCard` (local) standardizes presentation.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
@@ -145,7 +165,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section
+        - Purpose: Drive users to get involved or contact.
+        - Layout: Dual CTA buttons for primary pathways.
+      */}
       <section className="py-20 bg-gradient-to-r from-pastel-green to-pastel-yellow">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
@@ -168,6 +191,7 @@ export default function Home() {
   );
 }
 
+// TestimonialCard: quote + attribution display
 function TestimonialCard({
   quote,
   author,
@@ -191,6 +215,7 @@ function TestimonialCard({
   );
 }
 
+// StatCard (Home preview): compact metric with icon
 function StatCard({
   number,
   label,

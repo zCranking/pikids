@@ -1,9 +1,19 @@
+// Shared CTA Button component used for navigation/actions
+// Path is resolved via Next.js/TS path aliases
 import Button from "@/app/components/Button";
 
+// AboutPage: renders the About content with semantic sections and
+// Tailwind utility classes. Comments explain purpose and structure
+// for future maintainers/content editors.
 export default function AboutPage() {
   return (
+    // Page wrapper ensures minimum full viewport height
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section
+        - Purpose: Immediate intro and mission tagline.
+        - Design: Soft gradient from brand pastel green to white.
+        - Layout: Centered content with generous vertical spacing.
+      */}
       <section className="bg-gradient-to-br from-pastel-green-light to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -16,7 +26,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission Statement */}
+      {/* Mission Statement
+        - Purpose: Clearly state organization mission in a highlighted block.
+        - Accessibility: Strong heading contrast, relaxed line height.
+        - Container: Narrower width for improved readability.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-pastel-yellow-light rounded-2xl p-8 md:p-12">
@@ -30,7 +44,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Our Story
+        - Purpose: Provide origin and growth narrative for credibility.
+        - Layout: Two-column grid (text + simple visual) from md breakpoint.
+        - Visual: Emoji-based card avoids heavy media dependencies.
+      */}
       <section className="py-16 bg-pastel-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
@@ -69,14 +87,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Team */}
+      {/* Our Team
+        - Purpose: Humanize the organization via founders and volunteers.
+        - Structure: Founders (bios), Current Volunteers (roles), Past Volunteers (recognition).
+        - Note: If the list grows, consider pagination or dedicated page.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
             Our Team
           </h2>
 
-          {/* Founders */}
+          {/* Founders: key leaders with names, titles, and short bios */}
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">
               Founders
@@ -95,7 +117,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Current Volunteers */}
+          {/* Current Volunteers: active contributors and their roles */}
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">
               Current Volunteers
@@ -112,7 +134,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Past Volunteers */}
+          {/* Past Volunteers: recognizes prior service with years */}
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">
               Past Volunteers
@@ -131,7 +153,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Partners */}
+      {/* Partners
+        - Purpose: List collaborating organizations; swap placeholders with logos later.
+        - Layout: Responsive grid for equal visual weight.
+      */}
       <section className="py-16 bg-pastel-yellow-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
@@ -146,7 +171,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Impact Stats */}
+      {/* Impact Stats
+        - Purpose: Snapshot metrics of reach; replace with dynamic data when available.
+        - Component: `StatCard` avoids repetition and standardizes styling.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
@@ -161,7 +189,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Media & Recognition */}
+      {/* Media & Recognition
+        - Purpose: Display press mentions and awards to build trust.
+        - Component: `MediaCard` maintains consistent layout for items.
+        - Future: Consider sourcing from CMS/content files.
+      */}
       <section className="py-16 bg-pastel-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
@@ -187,7 +219,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA (Call To Action)
+        - Purpose: Encourage visitors to get involved.
+        - Routing: `Button` navigates to `/get-involved`.
+      */}
       <section className="py-20 bg-gradient-to-r from-pastel-green to-pastel-yellow">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
@@ -205,6 +240,8 @@ export default function AboutPage() {
   );
 }
 
+// TeamCard: reusable profile card for founders/staff
+// Props: `name` (string), `title` (string), `bio` (string)
 function TeamCard({
   name,
   title,
@@ -226,6 +263,8 @@ function TeamCard({
   );
 }
 
+// VolunteerCard: lightweight card for current volunteers
+// Props: `name` (string), `title` (role string)
 function VolunteerCard({ name, title }: { name: string; title: string }) {
   return (
     <div className="bg-pastel-cream rounded-xl p-4 text-center hover:shadow-md transition-shadow">
@@ -238,6 +277,8 @@ function VolunteerCard({ name, title }: { name: string; title: string }) {
   );
 }
 
+// PastVolunteer: acknowledges past volunteers and service years
+// Props: `name` (string), `years` (string range)
 function PastVolunteer({ name, years }: { name: string; years: string }) {
   return (
     <div className="bg-white rounded-lg p-4">
@@ -247,6 +288,8 @@ function PastVolunteer({ name, years }: { name: string; years: string }) {
   );
 }
 
+// PartnerLogo: placeholder name-only logo tile; swap to image later
+// Props: `name` (string)
 function PartnerLogo({ name }: { name: string }) {
   return (
     <div className="bg-white rounded-xl p-6 flex items-center justify-center aspect-video hover:shadow-md transition-shadow">
@@ -255,6 +298,8 @@ function PartnerLogo({ name }: { name: string }) {
   );
 }
 
+// StatCard: compact metric visualization (icon + number + label)
+// Props: `number` (string), `label` (string), `icon` (string), `color` ("green" | "yellow" | "red")
 function StatCard({
   number,
   label,
@@ -285,6 +330,8 @@ function StatCard({
   );
 }
 
+// MediaCard: press/award item display (icon, title, source, date)
+// Props: `title` (string), `source` (string), `date` (string)
 function MediaCard({
   title,
   source,

@@ -1,9 +1,16 @@
+// Shared Button component for cross-page CTAs
 import Button from "@/app/components/Button";
 
+// Our Why page: explains the problem, our solution, actionable
+// steps for visitors, and a closing CTA. Comments annotate
+// each section and helper components.
 export default function OurWhyPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section
+        - Purpose: Frame the narrative (problem & solution).
+        - Design: Red→white gradient signals urgency.
+      */}
       <section className="bg-gradient-to-br from-pastel-red-light to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -16,7 +23,10 @@ export default function OurWhyPage() {
         </div>
       </section>
 
-      {/* The Problem */}
+      {/* The Problem
+        - Purpose: Describe the digital divide and its effects.
+        - Layout: Left narrative card, right stats grid.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
@@ -94,7 +104,10 @@ export default function OurWhyPage() {
         </div>
       </section>
 
-      {/* Our Solution */}
+      {/* Our Solution
+        - Purpose: Explain Pi Kids approach and differentiation.
+        - Layout: Visual card + bullet points + approach tags.
+      */}
       <section className="py-16 bg-pastel-green-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
@@ -161,7 +174,10 @@ export default function OurWhyPage() {
         </div>
       </section>
 
-      {/* What You Can Do */}
+      {/* What You Can Do
+        - Purpose: Concrete actions for visitors (volunteer, donate, partner).
+        - Component: `ActionCard` for uniform CTA blocks.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
@@ -196,7 +212,7 @@ export default function OurWhyPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA: final encouragement to get involved */}
       <section className="py-20 bg-gradient-to-r from-pastel-red to-pastel-yellow">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
@@ -214,6 +230,7 @@ export default function OurWhyPage() {
   );
 }
 
+// StatCard: small stat tile with color-coded background
 function StatCard({
   number,
   label,
@@ -240,6 +257,7 @@ function StatCard({
   );
 }
 
+// ImpactPoint: highlights secondary consequences of the problem
 function ImpactPoint({
   title,
   description,
@@ -258,6 +276,7 @@ function ImpactPoint({
   );
 }
 
+// SolutionPoint: checklist-style bullet explaining differentiators
 function SolutionPoint({
   title,
   description,
@@ -278,6 +297,7 @@ function SolutionPoint({
   );
 }
 
+// ApproachTag: badge-style tag describing teaching approach
 function ApproachTag({ text }: { text: string }) {
   return (
     <span className="px-4 py-2 bg-pastel-green-light rounded-full text-gray-700 font-medium">
@@ -286,6 +306,7 @@ function ApproachTag({ text }: { text: string }) {
   );
 }
 
+// ActionCard: CTA block with icon, copy, and button
 function ActionCard({
   icon,
   title,

@@ -1,9 +1,16 @@
+// Shared Button component for CTAs across sections
 import Button from "@/app/components/Button";
 
+// Programs page: showcases current/upcoming workshops, past events,
+// student projects, curriculum preview, and a closing CTA.
+// Comments annotate sections and reusable cards.
 export default function ProgramsPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section
+        - Purpose: Introduce programs focus and value proposition.
+        - Design: Yellow→white gradient and centered text.
+      */}
       <section className="bg-gradient-to-br from-pastel-yellow-light to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -16,7 +23,10 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Current & Upcoming Workshops */}
+      {/* Current & Upcoming Workshops
+        - Purpose: Promote active offerings with details and status.
+        - Component: `WorkshopCard` standardizes workshop presentation.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
@@ -63,14 +73,17 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Past Events */}
+      {/* Past Events
+        - Purpose: Showcase past activities via gallery and projects.
+        - Components: `GalleryImage`, `ProjectCard`.
+      */}
       <section className="py-16 bg-pastel-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
             Past Events
           </h2>
           
-          {/* Photo Gallery */}
+          {/* Photo Gallery: emoji placeholders; replace with images later */}
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6">
               Photo Gallery
@@ -87,7 +100,7 @@ export default function ProgramsPage() {
             </div>
           </div>
 
-          {/* Student Projects */}
+          {/* Student Projects: highlight exemplar student work */}
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-6">
               Student Project Showcases
@@ -113,7 +126,10 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Curriculum Preview */}
+      {/* Curriculum Preview
+        - Purpose: Explain pedagogy and share downloadable overview.
+        - Note: Replace placeholder with real download link.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-pastel-green-light rounded-2xl p-8 md:p-12">
@@ -151,7 +167,7 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA: encourage registration and volunteer participation */}
       <section className="py-20 bg-gradient-to-r from-pastel-yellow to-pastel-green">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
@@ -174,6 +190,7 @@ export default function ProgramsPage() {
   );
 }
 
+// WorkshopCard: full workshop details with status and skills
 function WorkshopCard({
   name,
   ageGroup,
@@ -245,6 +262,7 @@ function WorkshopCard({
   );
 }
 
+// GalleryImage: simple captioned tile; swap with real photos later
 function GalleryImage({ caption }: { caption: string }) {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
@@ -256,6 +274,7 @@ function GalleryImage({ caption }: { caption: string }) {
   );
 }
 
+// ProjectCard: student project highlight with title and description
 function ProjectCard({
   title,
   student,
@@ -277,6 +296,7 @@ function ProjectCard({
   );
 }
 
+// CurriculumPoint: checklist bullet for curriculum highlights
 function CurriculumPoint({ text }: { text: string }) {
   return (
     <li className="flex items-center gap-3">

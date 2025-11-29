@@ -1,9 +1,16 @@
+// Shared Button component used for form actions and links
 import Button from "@/app/components/Button";
 
+// Contact page: provides a contact form, direct contact
+// information, hours, social links, newsletter signup, map,
+// and FAQ quick links. Comments explain structure/purpose.
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section
+        - Purpose: Page title and brief invitation to reach out.
+        - Design: Soft gradient matching brand palette.
+      */}
       <section className="bg-gradient-to-br from-pastel-green-light to-pastel-yellow-light py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -15,11 +22,18 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form & Info */}
+      {/* Contact Form & Info
+        - Purpose: Two-column layout with a simple contact form and
+          supplemental contact channels (email/phone/location), hours,
+          and social links.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Form */}
+            {/* Contact Form
+              - Note: Currently client-side only (no handler). Integrate
+                with API route or external service when ready.
+            */}
             <div>
               <h2 className="text-2xl font-bold text-gray-800 mb-6">
                 Send Us a Message
@@ -91,7 +105,10 @@ export default function ContactPage() {
               </form>
             </div>
 
-            {/* Contact Information */}
+            {/* Contact Information
+              - Purpose: Alternative ways to reach Pi Kids.
+              - Includes: Email, phone, physical address, hours, socials.
+            */}
             <div>
               <h2 className="text-2xl font-bold text-gray-800 mb-6">
                 Other Ways to Reach Us
@@ -117,7 +134,7 @@ export default function ContactPage() {
                 />
               </div>
 
-              {/* Hours */}
+              {/* Hours: office availability summary */}
               <div className="bg-pastel-cream rounded-xl p-6 mb-8">
                 <h3 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
                   <span>🕐</span> Office Hours
@@ -129,7 +146,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Social Links */}
+              {/* Social Links: external profiles with accessible icons */}
               <div className="bg-pastel-green-light rounded-xl p-6">
                 <h3 className="font-semibold text-gray-800 mb-4">
                   Follow Us
@@ -162,7 +179,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
+      {/* Newsletter Signup
+        - Purpose: Collect emails for updates; form is non-functional
+          placeholder pending backend integration.
+      */}
       <section className="py-16 bg-pastel-yellow-light">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 md:p-12 text-center">
@@ -194,7 +214,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Placeholder */}
+      {/* Map Placeholder
+        - Purpose: Show location and provide directions link.
+        - Replace with embedded map when available.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
@@ -219,7 +242,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* FAQ Quick Links */}
+      {/* FAQ Quick Links
+        - Purpose: Short answers to common questions; consider linking
+          to a full FAQ page if content grows.
+      */}
       <section className="py-16 bg-pastel-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
@@ -249,6 +275,7 @@ export default function ContactPage() {
   );
 }
 
+// ContactInfo: row with icon + title + content (linkable)
 function ContactInfo({
   icon,
   title,
@@ -278,6 +305,7 @@ function ContactInfo({
   );
 }
 
+// SocialLink: external social profile with inline SVG icon
 function SocialLink({
   name,
   href,
@@ -323,6 +351,7 @@ function SocialLink({
   );
 }
 
+// FaqCard: small Q&A block for quick answers
 function FaqCard({ question, answer }: { question: string; answer: string }) {
   return (
     <div className="bg-white rounded-xl p-6 hover:shadow-md transition-shadow">

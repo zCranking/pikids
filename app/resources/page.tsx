@@ -1,9 +1,16 @@
+// Shared Button component for CTAs and links
 import Button from "@/app/components/Button";
 
+// Resources page: aggregates tools, videos, parent guides,
+// volunteer resources, and a contact CTA. Comments document
+// each section and reusable card components.
 export default function ResourcesPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section
+        - Purpose: Introduce available resources and audience.
+        - Design: Yellow→white gradient and centered text.
+      */}
       <section className="bg-gradient-to-br from-pastel-yellow-light to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -16,7 +23,10 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* AI College Advisor */}
+      {/* AI College Advisor
+        - Purpose: Promote an external AI advising tool.
+        - Note: Replace link with first-party advisor when available.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-pastel-green-light to-pastel-yellow-light rounded-2xl p-8 md:p-12">
@@ -55,7 +65,10 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* Free Learning Tools */}
+      {/* Free Learning Tools
+        - Purpose: Curated list of external learning platforms.
+        - Components: `FilterTag` (UI only), `ToolCard` (external links).
+      */}
       <section className="py-16 bg-pastel-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
@@ -65,7 +78,7 @@ export default function ResourcesPage() {
             Curated resources for learners of all ages and skill levels.
           </p>
 
-          {/* Filter Tags */}
+          {/* Filter Tags: simple UI filter placeholders (non-functional) */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             <FilterTag label="All" active />
             <FilterTag label="Beginners (5-8)" />
@@ -120,7 +133,10 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* Video Tutorials */}
+      {/* Video Tutorials
+        - Purpose: Volunteer-created videos with levels and durations.
+        - Component: `VideoCard` with placeholder thumbnails.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
@@ -165,7 +181,10 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* For Parents */}
+      {/* For Parents
+        - Purpose: Guidance and FAQs tailored to parents.
+        - Components: `ResourceCard` and `FaqItem` entries.
+      */}
       <section className="py-16 bg-pastel-green-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
@@ -218,7 +237,10 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* For Volunteers */}
+      {/* For Volunteers
+        - Purpose: Members-only resource portal (placeholder).
+        - Note: Wire up authentication and portal link later.
+      */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-pastel-yellow-light rounded-2xl p-8 md:p-12">
@@ -266,7 +288,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA: invite users to reach out with questions */}
       <section className="py-20 bg-gradient-to-r from-pastel-yellow to-pastel-green">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
@@ -284,6 +306,7 @@ export default function ResourcesPage() {
   );
 }
 
+// FilterTag: pill-style tag for UI filtering (non-functional)
 function FilterTag({ label, active }: { label: string; active?: boolean }) {
   return (
     <button
@@ -298,6 +321,7 @@ function FilterTag({ label, active }: { label: string; active?: boolean }) {
   );
 }
 
+// ToolCard: external resource link with icon and level badge
 function ToolCard({
   name,
   description,
@@ -336,6 +360,7 @@ function ToolCard({
   );
 }
 
+// VideoCard: tutorial tile with level + duration
 function VideoCard({
   title,
   duration,
@@ -374,6 +399,7 @@ function VideoCard({
   );
 }
 
+// ResourceCard: informational card with optional action button
 function ResourceCard({
   icon,
   title,

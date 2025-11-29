@@ -1,9 +1,16 @@
+// Shared Button component for CTAs throughout this page
 import Button from "@/app/components/Button";
 
+// Get Involved page: central hub for volunteering, donating,
+// hosting, and partnering. Sections include forms and info
+// cards. Comments clarify intent and future integration points.
 export default function GetInvolvedPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section
+        - Purpose: Introduce engagement pathways succinctly.
+        - Design: Brand gradient and centered content.
+      */}
       <section className="bg-gradient-to-br from-pastel-green-light to-pastel-yellow-light py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -16,7 +23,11 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      {/* Volunteer Section */}
+      {/* Volunteer Section
+        - Purpose: Explain volunteer roles and collect applications.
+        - Layout: Roles list on left, application form on right.
+        - Note: Form is a placeholder; wire to API or service later.
+      */}
       <section id="volunteer" className="py-16 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -66,7 +77,11 @@ export default function GetInvolvedPage() {
               </div>
             </div>
 
-            {/* Volunteer Application Form */}
+            {/* Volunteer Application Form
+              - Fields: name, email, phone, age group, preferred role,
+                experience.
+              - Future: validation, submit handler, success feedback.
+            */}
             <div className="bg-pastel-green-light rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-6">
                 Apply to Volunteer
@@ -163,7 +178,10 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      {/* Donate Section */}
+      {/* Donate Section
+        - Purpose: Show impact tiers and collect donations.
+        - Note: Payment flow pending; buttons are non-functional.
+      */}
       <section id="donate" className="py-16 bg-pastel-yellow-light scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -180,7 +198,7 @@ export default function GetInvolvedPage() {
             </p>
           </div>
 
-          {/* Impact Chart */}
+          {/* Impact Chart: donation tiers and tangible outcomes */}
           <div className="grid md:grid-cols-4 gap-6 mb-12">
             <ImpactCard
               amount="$25"
@@ -204,7 +222,10 @@ export default function GetInvolvedPage() {
             />
           </div>
 
-          {/* Donation Options */}
+          {/* Donation Options
+            - Purpose: Quick-select amounts + custom input.
+            - Future: Integrate payment processor and validation.
+          */}
           <div className="bg-white rounded-2xl p-8 max-w-2xl mx-auto text-center">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">
               Make a Donation
@@ -247,7 +268,10 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      {/* Host a Workshop Section */}
+      {/* Host a Workshop Section
+        - Purpose: Invite venues to host; outline logistics.
+        - Layout: Info + checklist and contact CTA.
+      */}
       <section id="host" className="py-16 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -285,7 +309,10 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      {/* Partner With Us Section */}
+      {/* Partner With Us Section
+        - Purpose: Describe partnership types and collect inquiries.
+        - Layout: Partner type cards + form.
+      */}
       <section id="partner" className="py-16 bg-pastel-cream scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
