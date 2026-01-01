@@ -57,23 +57,10 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                How It Started
+                Our Founder's Story
               </h3>
               <p className="text-gray-600 mb-6">
-                Pi Kids began in 2019 when a group of college students noticed
-                that children in their local community had little access to
-                technology education. With just five Raspberry Pi computers and a
-                borrowed classroom, we ran our first workshop.
-              </p>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                Inspiration & Evolution
-              </h3>
-              <p className="text-gray-600">
-                Inspired by the belief that every child deserves access to
-                technology, we&apos;ve grown from that single workshop to serving
-                hundreds of students across multiple cities. Our curriculum has
-                evolved to include coding, robotics, game development, and more.
-              </p>
+                I was born in Queens, NY, but have lived in California since middle school. School districts in NY and CA that rank among the best are a privilege for me. As I was ready for school, my parents moved to Long Island, NY. Many parents move to better public school districts for their children. I asked my parents once. What motivates parents to move to better schools? Why are those schools better? Better school districts have better funding, my parents explain. With more funding, they have better teachers, guidance, and technology. School districts that were underfunded weren’t as good as those that were. Some areas lack funding. Lack of funding, etc. The second experience came through Racheal. She cleaned our Long Island house. When she was a little girl, she would help her mom clean the house, and then play with me. She was in middle school, I was in elementary school. Sometimes my mom brought her with her to pick me up from school. She would listen to me tell her stories about the auditorium, computers, library, holiday parties, and talk shows by big authors. She used to be amazed by my school stories. All of these weren’t at her school. Her school didn’t host any famous authors. I never believed her in elementary school. In my opinion, all schools should be the same. Mom was so happy when she called from New York and told her she was accepted! She gave me the example of Rachel, who had limited school resources, but made it to medical school despite it. Here I am again asking the same question! How about most of the country? Hard work pays off for some students, but not for others. Doesn’t every student deserve the same quality of public school education? It shouldn’t be based on where they were born! - Sayam De
             </div>
             <div className="bg-pastel-green-light rounded-2xl p-8">
               <div className="aspect-video bg-pastel-cream rounded-lg flex items-center justify-center">
@@ -105,14 +92,14 @@ export default function AboutPage() {
             </h3>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <TeamCard
-                name="Sarah Chen"
-                title="Co-Founder & Executive Director"
-                bio="Former software engineer passionate about education equity. Sarah leads Pi Kids&apos; strategic vision and partnerships."
+                name="Sayam De"
+                title="Founder"
+                bio="I am passionate about the intersection of technology and business. In the past few years, my Python data projects on Raspberry Pi have won awards at the Contra Costa County Science and Engineering Fair. In order to bridge the US’s educational equity gap, I leveraged these skills and accomplishments. My program, Pi Kids, spreads technology initiatives to the next generation. Moreover, I’m a believer. LF member, I believe collaboration makes a difference!"
               />
               <TeamCard
-                name="Marcus Johnson"
-                title="Co-Founder & Program Director"
-                bio="Educator with 10 years of experience in STEM education. Marcus oversees curriculum development and workshop operations."
+                name="Shlok Kulkarni"
+                title="Co-Founder"
+                bio="I am an entrepreneur, researcher, and biotechnology-enthusiast with extensive interest in gene sequencing and gene modification. Outside of school, I have done Taekwondo for around 9 years, and am currently a 2nd degree black belt. I am an amateur guitarist and enjoy playing in my free time. I also enjoy skateboarding."
               />
             </div>
           </div>
@@ -123,14 +110,8 @@ export default function AboutPage() {
               Current Volunteers
             </h3>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              <VolunteerCard name="Alex Rivera" title="Lead Instructor" />
-              <VolunteerCard name="Jamie Wong" title="Curriculum Developer" />
-              <VolunteerCard name="Taylor Smith" title="Workshop Coordinator" />
-              <VolunteerCard name="Jordan Lee" title="Tech Support" />
-              <VolunteerCard name="Casey Brown" title="Instructor" />
-              <VolunteerCard name="Morgan Davis" title="Instructor" />
-              <VolunteerCard name="Riley Garcia" title="Admin Support" />
-              <VolunteerCard name="Quinn Martinez" title="Outreach Coordinator" />
+              <VolunteerCard name="Ayush Talapatra" title="President" />
+              <VolunteerCard name="Rajveer Grover" title="Workshop Instructor" />
             </div>
           </div>
 
@@ -141,12 +122,31 @@ export default function AboutPage() {
             </h3>
             <div className="bg-pastel-green-light rounded-2xl p-8">
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <PastVolunteer name="Emily Zhang" years="2019-2021" />
-                <PastVolunteer name="David Kim" years="2019-2020" />
-                <PastVolunteer name="Jessica Patel" years="2020-2022" />
-                <PastVolunteer name="Michael Thompson" years="2019-2021" />
-                <PastVolunteer name="Amanda Collins" years="2020-2021" />
-                <PastVolunteer name="Ryan O&apos;Brien" years="2021-2022" />
+                <PastVolunteer name="Shreyas Kommuri"/>
+                <PastVolunteer name="Rahul Racharia"/>
+                <PastVolunteer name="Manav Divakar"/>
+                <PastVolunteer name="Apoorva Kulshreshta"/>
+                <PastVolunteer name="Shreyan Biswas"/>
+                <PastVolunteer name="Sri Paturi"/>
+                <PastVolunteer name="Lalitha Kalle"/>
+                <PastVolunteer name="Rutvik Kollipara"/>
+                <PastVolunteer name="Jay Saluja"/>
+                <PastVolunteer name="Ayush Chackroborty"/>
+                <PastVolunteer name="Harika Chodavarapu"/>
+                <PastVolunteer name="Michelle Lee"/>
+                <PastVolunteer name="Emma Hongkham"/>
+                <PastVolunteer name="Maitri Singhal"/>
+                <PastVolunteer name="Shreyas Sharma"/>
+                <PastVolunteer name="Jai Velukuru"/>
+                <PastVolunteer name="Arshia Singh"/>
+                <PastVolunteer name="Arnab Datta Chowdhury"/>
+                <PastVolunteer name="Sanjay Darshan Ramkumar"/>
+                <PastVolunteer name="Spoorthi Bedadam"/>
+                <PastVolunteer name="Shreyas Potturu"/>
+                <PastVolunteer name="Saketh Potturu"/>
+                <PastVolunteer name="Hritvik Hooda"/>
+                <PastVolunteer name="Brindha Kumar"/>
+                <PastVolunteer name="Akshaj Chirathanagandla"/>
               </div>
             </div>
           </div>
@@ -160,64 +160,22 @@ export default function AboutPage() {
       <section className="py-16 bg-pastel-yellow-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
-            Our Partners
+            Previous Workshop Locations
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <PartnerLogo name="Boys & Girls Club" />
-            <PartnerLogo name="City Public Library" />
-            <PartnerLogo name="Tech for Good Foundation" />
-            <PartnerLogo name="Local Schools District" />
+            <PartnerLogo name="Boys & Girls Club of Oakland - Anna Marie Whalen Branch"/>
+            <PartnerLogo name="Seven Trees Library"/>
+            <PartnerLogo name="Henry Waldinger Memorial Library - Valley Stream, NY"/>
+            <PartnerLogo name="West Valley Library"/>
+            <PartnerLogo name="Bascom Library"/>
+            <PartnerLogo name="Educational Park Library"/>
+            <PartnerLogo name="Joyce Ellington Library"/>
+            <PartnerLogo name="Edenvale Branch Library"/>
+            <PartnerLogo name="Oakland Public Library"/>
+            <PartnerLogo name="Hayward Library"/>
+            <PartnerLogo name="Biblioteca Latinoamerica Library"/>
           </div>
         </div>
-      </section>
-
-      {/* Impact Stats
-        - Purpose: Snapshot metrics of reach; replace with dynamic data when available.
-        - Component: `StatCard` avoids repetition and standardizes styling.
-      */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
-            Our Impact
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <StatCard number="500+" label="Students Taught" icon="👨‍🎓" color="green" />
-            <StatCard number="1,200+" label="Hours Volunteered" icon="⏰" color="yellow" />
-            <StatCard number="12" label="Cities Served" icon="🏙️" color="red" />
-            <StatCard number="85%" label="Low-Income Students" icon="❤️" color="green" />
-          </div>
-        </div>
-      </section>
-
-      {/* Media & Recognition
-        - Purpose: Display press mentions and awards to build trust.
-        - Component: `MediaCard` maintains consistent layout for items.
-        - Future: Consider sourcing from CMS/content files.
-      */}
-      <section className="py-16 bg-pastel-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
-            Media & Recognition
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <MediaCard
-              title="Pi Kids Featured in Local News"
-              source="City Tribune"
-              date="March 2024"
-            />
-            <MediaCard
-              title="Innovative Tech Education Award"
-              source="Tech Education Foundation"
-              date="December 2023"
-            />
-            <MediaCard
-              title="Community Impact Spotlight"
-              source="NPR Local"
-              date="August 2023"
-            />
-          </div>
-        </div>
-      </section>
 
       {/* CTA (Call To Action)
         - Purpose: Encourage visitors to get involved.
