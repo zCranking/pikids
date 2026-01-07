@@ -112,48 +112,6 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* For Volunteers
-        - Purpose: Members-only resource portal (placeholder).
-        - Note: Wire up authentication and portal link later.
-      */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-pastel-yellow-light rounded-2xl p-8 md:p-12">
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="grid grid-cols-1 gap-8 items-center">
-                <div>
-                  <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-4">
-                    <span>🔐</span>
-                    <span className="font-medium text-gray-800">Members Only</span>
-                  </div>
-                  <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                    Volunteer Resources
-                  </h2>
-                  <p className="text-gray-600 mb-6">
-                    Access training documents, curriculum materials, and the
-                    volunteer portal. Login required.
-                  </p>
-                  <ul className="space-y-2 mb-6 flex flex-col items-center">
-                    <li className="flex items-center gap-2 text-gray-600">
-                      <span>📋</span> Onboarding checklist
-                    </li>
-                    <li className="flex items-center gap-2 text-gray-600">
-                      <span>📚</span> Full curriculum library
-                    </li>
-                    <li className="flex items-center gap-2 text-gray-600">
-                      <span>📅</span> Schedule & sign-up
-                    </li>
-                  </ul>
-                  <Button href="#" variant="primary" className="mx-auto">
-                    Volunteer Login
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA: invite users to reach out with questions */}
       <section className="py-20 bg-gradient-to-r from-pastel-yellow to-pastel-green">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
