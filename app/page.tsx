@@ -14,38 +14,26 @@ export default function Home() {
       */}
       <section className="relative bg-gradient-to-br from-pastel-green-light via-white to-pastel-yellow-light py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left">
+          <div className="grid place-items-center">
+            <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-                Tech Literacy for{" "}
+                Tech Literacy For {" "}
                 <span className="text-pastel-green-dark">Every Kid</span>
               </h1>
               <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl">
                 Empowering the next generation through hands-on coding workshops
-                in under-resourced communities, powered by Raspberry Pi TEST
+                in under-resourced communities, powered by Raspberry Pi
               </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button href="/get-involved#volunteer" variant="primary" size="lg">
-                  Volunteer With Us
+                  Volunteer
                 </Button>
                 <Button href="/get-involved#host" variant="secondary" size="lg">
                   Host a Workshop
                 </Button>
                 <Button href="/get-involved#donate" variant="outline" size="lg">
-                  Donate Now
+                  Donate
                 </Button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-pastel-yellow rounded-2xl p-8 shadow-lg">
-                <div className="aspect-video bg-pastel-cream rounded-lg flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-24 h-24 mx-auto bg-pastel-green rounded-full flex items-center justify-center mb-4">
-                      <span className="text-4xl">🖥️</span>
-                    </div>
-                    <p className="text-gray-600">Kids collaborating on Raspberry Pi projects</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -67,19 +55,16 @@ export default function Home() {
               <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center">
                 <span className="text-6xl">👨‍💻</span>
               </div>
-              <p className="text-gray-600 text-sm">Coding workshop at Community Center</p>
             </div>
             <div className="bg-pastel-yellow-light rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center">
                 <span className="text-6xl">🎓</span>
               </div>
-              <p className="text-gray-600 text-sm">Students presenting their projects</p>
             </div>
             <div className="bg-pastel-red-light rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center">
                 <span className="text-6xl">🤝</span>
               </div>
-              <p className="text-gray-600 text-sm">Volunteer mentoring session</p>
             </div>
           </div>
         </div>
@@ -96,71 +81,20 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <TestimonialCard
-              quote="I never thought I could code, but now I've made my own game!"
-              author="Jordan, Age 12"
-              role="Student"
+              quote="It’s very rewarding to have Pi Kids come and teach our students Raspberry Pi! There is a lots of enthusiasm and it’s so rewarding to see how this team wants to give back! Thank you for introducing our students to Raspberry Pi! We had 14 children attended the first session and 12 children attended the second session. It was a success and children enjoyed it. Thank you again for your enthusiasm , patience, time and effort."
+              author="Mamie Eng"
+              role="Henry Waldinger Memorial Library Director"
             />
             <TestimonialCard
-              quote="Pi Kids gave my daughter confidence she never had before."
-              author="Maria S."
-              role="Parent"
+              quote="This class was really engaging. It was a great way for kids who weren’t familiar with the Raspberry Pi to get involved and learn more about it. And I think all the participants had a really great time"
+              author="Ari Nussbaum"
+              role="Hayward Public Library Librarian"
             />
             <TestimonialCard
-              quote="Teaching here has been the most rewarding experience of my life."
-              author="Alex T."
-              role="Volunteer"
+              quote="The Raspberry Pi is a very interesting class. This class was very fun because we downloaded and played a lot of games on the Raspberry Pi like Minecraft. Not only did we get to play games, but we also coded on the Raspberry Pi. This is very interesting and cool because the games were fun and the coding was very interesting. This is an awesome class and the instructors are super friendly and resourceful. That’s the reason I joined this team to be awesome and learn to code while having fun!! You should attend the class because in the classes, you get to play games and code apps! Another time in the class, we downloaded Pac-Man on the Raspberry Pi! There were many more fun things we did. You should attend this class right now, this is the most fun computer programming class I have ever been to!"
+              author="Rutvik Kollipara, 6th Grade"
+              role="Biblioteca Library, San Jose"
             />
-          </div>
-        </div>
-      </section>
-
-      {/* Important Updates
-        - Purpose: Announcements (e.g., recruiting volunteers).
-        - Visual: Accent border and icon to draw attention.
-      */}
-      <section className="py-16 bg-pastel-yellow-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-pastel-red">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-pastel-red rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl">📢</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Seeking New Volunteers for Winter Term
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Join our team and help us bring tech education to more kids this winter. 
-                  No coding experience required – just a passion for helping children learn!
-                </p>
-                <Button href="/get-involved#volunteer" variant="primary" size="sm">
-                  Apply Now
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Impact Stats Preview
-        - Purpose: Teaser metrics; links to full details on About.
-        - Component: `StatCard` (local) standardizes presentation.
-      */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Our Impact
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <StatCard number="500+" label="Students Taught" icon="👨‍🎓" />
-            <StatCard number="1,200+" label="Hours Volunteered" icon="⏰" />
-            <StatCard number="12" label="Cities Served" icon="🏙️" />
-            <StatCard number="85%" label="Low-Income Students" icon="❤️" />
-          </div>
-          <div className="text-center mt-12">
-            <Button href="/about" variant="outline">
-              Learn More About Our Impact
-            </Button>
           </div>
         </div>
       </section>
@@ -179,7 +113,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/get-involved" variant="primary" size="lg">
-              Get Involved Today
+              Get Involved
             </Button>
             <Button href="/contact" variant="outline" size="lg">
               Contact Us

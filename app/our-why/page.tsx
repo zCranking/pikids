@@ -37,7 +37,7 @@ export default function OurWhyPage() {
             <div>
               <div className="bg-pastel-red-light rounded-2xl p-8">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-6">
-                  The Digital Divide Is Real
+                  The Digital Divide
                 </h3>
                 <p className="text-gray-600 mb-6">
                   Millions of children in under-resourced communities lack access
@@ -45,13 +45,6 @@ export default function OurWhyPage() {
                   affecting their future opportunities in an increasingly
                   digital world.
                 </p>
-                <blockquote className="border-l-4 border-pastel-red pl-4 italic text-gray-700">
-                  &quot;I never touched a computer until I was 15. By then, my
-                  classmates in other schools had been coding for years.&quot;
-                  <footer className="text-sm text-gray-500 mt-2">
-                    — Former student, now Pi Kids volunteer
-                  </footer>
-                </blockquote>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -144,7 +137,7 @@ export default function OurWhyPage() {
                 />
                 <SolutionPoint
                   title="Mentorship"
-                  description="Volunteers from diverse backgrounds who look like our students."
+                  description="High-school volunteers who can relate easily to the students."
                 />
                 <SolutionPoint
                   title="Take-Home Skills"
@@ -159,15 +152,13 @@ export default function OurWhyPage() {
               Our Approach
             </h3>
             <p className="text-gray-600 max-w-3xl mx-auto mb-8">
-              We don&apos;t just teach coding. We build confidence, spark
-              curiosity, and open doors to futures our students never imagined
+              We build confidence, spark curiosity, and open doors to futures our students never imagined
               possible.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <ApproachTag text="Project-Based" />
-              <ApproachTag text="Peer Learning" />
-              <ApproachTag text="Community-Centered" />
-              <ApproachTag text="Culturally Relevant" />
+              <ApproachTag text="Hands-on Learning" />
+              <ApproachTag text="Practical Skills" />
               <ApproachTag text="Low-Cost Materials" />
             </div>
           </div>
@@ -195,15 +186,15 @@ export default function OurWhyPage() {
             <ActionCard
               icon="💝"
               title="Donate"
-              description="Your donation provides equipment, materials, and program support for students."
+              description="Your donation provides equipment and program support for students."
               buttonText="Make a Donation"
               buttonHref="/get-involved#donate"
               color="yellow"
             />
             <ActionCard
               icon="🤝"
-              title="Share or Partner"
-              description="Help spread the word or bring Pi Kids programs to your community."
+              title="Partner"
+              description="Bring Pi Kids programs to your organization or community."
               buttonText="Partner With Us"
               buttonHref="/get-involved#partner"
               color="red"

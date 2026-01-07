@@ -23,48 +23,6 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* AI College Advisor
-        - Purpose: Promote an external AI advising tool.
-        - Note: Replace link with first-party advisor when available.
-      */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-pastel-green-light to-pastel-yellow-light rounded-2xl p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-4">
-                  <span>🤖</span>
-                  <span className="font-medium text-gray-800">AI Powered</span>
-                </div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                  AI College Advisor
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Get personalized guidance on college applications, scholarships,
-                  and career paths in technology. Our AI advisor can help you
-                  navigate your educational journey.
-                </p>
-                <Button
-                  href="https://chat.openai.com"
-                  variant="primary"
-                  size="lg"
-                >
-                  Try AI Advisor →
-                </Button>
-              </div>
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="aspect-video bg-pastel-cream rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <span className="text-6xl">🎓</span>
-                    <p className="mt-4 text-gray-600">AI-powered college guidance</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Free Learning Tools
         - Purpose: Curated list of external learning platforms.
         - Components: `FilterTag` (UI only), `ToolCard` (external links).
@@ -77,14 +35,6 @@ export default function ResourcesPage() {
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
             Curated resources for learners of all ages and skill levels.
           </p>
-
-          {/* Filter Tags: simple UI filter placeholders (non-functional) */}
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            <FilterTag label="All" active />
-            <FilterTag label="Beginners (5-8)" />
-            <FilterTag label="Intermediate (9-12)" />
-            <FilterTag label="Advanced (13+)" />
-          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ToolCard
@@ -133,54 +83,6 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* Video Tutorials
-        - Purpose: Volunteer-created videos with levels and durations.
-        - Component: `VideoCard` with placeholder thumbnails.
-      */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
-            Video Tutorials
-          </h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Learn with our step-by-step video guides created by Pi Kids volunteers.
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <VideoCard
-              title="Getting Started with Raspberry Pi"
-              duration="15 min"
-              level="Beginner"
-            />
-            <VideoCard
-              title="Your First Scratch Game"
-              duration="20 min"
-              level="Beginner"
-            />
-            <VideoCard
-              title="LED Light Show with Python"
-              duration="25 min"
-              level="Intermediate"
-            />
-            <VideoCard
-              title="Build a Simple Robot"
-              duration="45 min"
-              level="Advanced"
-            />
-            <VideoCard
-              title="Web Basics: HTML & CSS"
-              duration="30 min"
-              level="Beginner"
-            />
-            <VideoCard
-              title="Introduction to Python"
-              duration="35 min"
-              level="Intermediate"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* For Parents
         - Purpose: Guidance and FAQs tailored to parents.
         - Components: `ResourceCard` and `FaqItem` entries.
@@ -188,37 +90,10 @@ export default function ResourcesPage() {
       <section className="py-16 bg-pastel-green-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
-            For Parents
+            FAQs for Parents
           </h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Resources to help you support your child&apos;s tech learning journey.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <ResourceCard
-              icon="🔒"
-              title="Tech Safety Guide"
-              description="Keep your child safe online with these essential tips and tools for monitoring and educating about internet safety."
-              buttonText="Download Guide"
-            />
-            <ResourceCard
-              icon="📖"
-              title="Supporting Your Child's Learning"
-              description="Practical ways to encourage your child's interest in technology, even if you're not tech-savvy yourself."
-              buttonText="Read More"
-            />
-            <ResourceCard
-              icon="🌐"
-              title="Digital Literacy Basics"
-              description="Understanding technology fundamentals so you can learn alongside your child and have informed conversations."
-              buttonText="Start Learning"
-            />
-          </div>
 
           <div className="mt-12 bg-white rounded-2xl p-8">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">
-              FAQ for Parents
-            </h3>
             <div className="space-y-4">
               <FaqItem
                 question="Do I need to know coding to help my child?"
@@ -226,11 +101,11 @@ export default function ResourcesPage() {
               />
               <FaqItem
                 question="What equipment does my child need at home?"
-                answer="While we provide all equipment during workshops, having a computer or tablet at home can help. We also have loaner Raspberry Pi kits available for families who need them."
+                answer="While we provide all equipment during workshops, having a computer or tablet at home can help. If your child develops an interest for Raspberry Pis, you could look into purchasing one."
               />
               <FaqItem
-                question="How much screen time is healthy?"
-                answer="We emphasize balanced technology use. Our workshops include hands-on building and unplugged activities, not just screen time. We recommend the AAP guidelines for screen time limits."
+                question="Does my child need prior experience?"
+                answer="We welcome all skill levels! Our curriculum is adaptive to those learning it, so beginners can join without any prior coding experience."
               />
             </div>
           </div>
@@ -244,43 +119,34 @@ export default function ResourcesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-pastel-yellow-light rounded-2xl p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-4">
-                  <span>🔐</span>
-                  <span className="font-medium text-gray-800">Members Only</span>
-                </div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                  Volunteer Resources
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Access training documents, curriculum materials, and the
-                  volunteer portal. Login required.
-                </p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-center gap-2 text-gray-600">
-                    <span>📋</span> Onboarding checklist
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-600">
-                    <span>📚</span> Full curriculum library
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-600">
-                    <span>🎓</span> Training videos
-                  </li>
-                  <li className="flex items-center gap-2 text-gray-600">
-                    <span>📅</span> Schedule & sign-up
-                  </li>
-                </ul>
-                <Button href="#" variant="primary">
-                  Volunteer Login
-                </Button>
-              </div>
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="aspect-video bg-pastel-cream rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <span className="text-6xl">👨‍🏫</span>
-                    <p className="mt-4 text-gray-600">Volunteer Portal</p>
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="grid grid-cols-1 gap-8 items-center">
+                <div>
+                  <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full mb-4">
+                    <span>🔐</span>
+                    <span className="font-medium text-gray-800">Members Only</span>
                   </div>
+                  <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                    Volunteer Resources
+                  </h2>
+                  <p className="text-gray-600 mb-6">
+                    Access training documents, curriculum materials, and the
+                    volunteer portal. Login required.
+                  </p>
+                  <ul className="space-y-2 mb-6 flex flex-col items-center">
+                    <li className="flex items-center gap-2 text-gray-600">
+                      <span>📋</span> Onboarding checklist
+                    </li>
+                    <li className="flex items-center gap-2 text-gray-600">
+                      <span>📚</span> Full curriculum library
+                    </li>
+                    <li className="flex items-center gap-2 text-gray-600">
+                      <span>📅</span> Schedule & sign-up
+                    </li>
+                  </ul>
+                  <Button href="#" variant="primary" className="mx-auto">
+                    Volunteer Login
+                  </Button>
                 </div>
               </div>
             </div>

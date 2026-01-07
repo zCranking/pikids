@@ -40,41 +40,25 @@ export default function GetInvolvedPage() {
                 Share Your Skills
               </h2>
               <p className="text-gray-600 mb-6">
-                We welcome volunteers of all backgrounds – teens and adults
-                alike. Whether you&apos;re a tech expert or someone who loves
+                We welcome volunteers of all backgrounds. Whether you&apos;re a tech expert or someone who loves
                 working with kids, there&apos;s a role for you.
               </p>
 
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Volunteer Roles
+                Skills and Traits We Look For
               </h3>
-              <div className="space-y-4 mb-8">
-                <RoleCard
-                  title="Workshop Instructor"
-                  description="Lead coding sessions and guide students through projects. Training provided."
-                  time="4-6 hours/week"
-                />
-                <RoleCard
-                  title="Teaching Assistant"
-                  description="Support instructors by helping individual students who need extra attention."
-                  time="2-4 hours/week"
-                />
-                <RoleCard
-                  title="Curriculum Developer"
-                  description="Help create and improve our lesson plans and project guides."
-                  time="Flexible"
-                />
-                <RoleCard
-                  title="Tech Support"
-                  description="Set up equipment, troubleshoot issues, and maintain our Raspberry Pis."
-                  time="2-4 hours/week"
-                />
-                <RoleCard
-                  title="Administrative Support"
-                  description="Help with registration, communications, and event coordination."
-                  time="Flexible"
-                />
+              <div className="space-y-3 mb-8">
+                <SkillItem text="Technical expertise in Raspberry Pi, Python, or embedded systems" />
+                <SkillItem text="Ability to communicate complex concepts in child-friendly language" />
+                <SkillItem text="Patience and enthusiasm for working with young learners" />
+                <SkillItem text="Experience in education, mentoring, or youth programs" />
+                <SkillItem text="Problem-solving skills and hands-on technical troubleshooting" />
+                <SkillItem text="Reliability and commitment to consistent participation" />
+                <SkillItem text="Collaborative mindset and willingness to work as part of a team" />
               </div>
+              <p className="text-sm text-gray-600">
+                Don&apos;t have all of these skills? That&apos;s okay! If you&apos;re passionate about tech education, we&apos;d love to hear from you. Fill out the application and tell us about your background.
+              </p>
             </div>
 
             {/* Volunteer Application Form
@@ -139,25 +123,6 @@ export default function GetInvolvedPage() {
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="vol-role" className="block text-sm font-medium text-gray-700 mb-1">
-                    Preferred Role *
-                  </label>
-                  <select
-                    id="vol-role"
-                    name="role"
-                    required
-                    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pastel-green focus:border-transparent"
-                  >
-                    <option value="">Select...</option>
-                    <option value="instructor">Workshop Instructor</option>
-                    <option value="ta">Teaching Assistant</option>
-                    <option value="curriculum">Curriculum Developer</option>
-                    <option value="tech">Tech Support</option>
-                    <option value="admin">Administrative Support</option>
-                    <option value="any">Open to Any Role</option>
-                  </select>
-                </div>
-                <div>
                   <label htmlFor="vol-experience" className="block text-sm font-medium text-gray-700 mb-1">
                     Tell us about yourself
                   </label>
@@ -193,7 +158,7 @@ export default function GetInvolvedPage() {
               Support Our Mission
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Your donation directly funds equipment, materials, and programs
+              Your donation directly funds equipment and programs
               that bring tech education to underserved communities.
             </p>
           </div>
@@ -201,22 +166,22 @@ export default function GetInvolvedPage() {
           {/* Impact Chart: donation tiers and tangible outcomes */}
           <div className="grid md:grid-cols-4 gap-6 mb-12">
             <ImpactCard
-              amount="$25"
-              impact="Provides a student kit with basic electronics components"
-              icon="🔌"
-            />
-            <ImpactCard
-              amount="$50"
-              impact="Covers one student's materials for an entire workshop session"
-              icon="📦"
-            />
-            <ImpactCard
-              amount="$100"
+              amount="$35"
               impact="Purchases a Raspberry Pi computer for student use"
               icon="🖥️"
             />
             <ImpactCard
-              amount="$500"
+              amount="$50"
+              impact="Provides additional hardware (sensors, HATs) used in our sessions"
+              icon="🔧"
+            />
+            <ImpactCard
+              amount="$85"
+              impact="Combo: Raspberry Pi plus additional hardware for hands-on learning"
+              icon="✨"
+            />
+            <ImpactCard
+              amount="$250"
               impact="Sponsors a complete workshop for 10 students"
               icon="🎓"
             />
@@ -235,13 +200,13 @@ export default function GetInvolvedPage() {
             </p>
             <div className="grid grid-cols-4 gap-4 mb-6">
               <button className="py-3 rounded-lg bg-pastel-green-light hover:bg-pastel-green transition-colors font-semibold text-gray-800">
-                $25
+                $35
               </button>
               <button className="py-3 rounded-lg bg-pastel-green-light hover:bg-pastel-green transition-colors font-semibold text-gray-800">
                 $50
               </button>
               <button className="py-3 rounded-lg bg-pastel-green-light hover:bg-pastel-green transition-colors font-semibold text-gray-800">
-                $100
+                $85
               </button>
               <button className="py-3 rounded-lg bg-pastel-green-light hover:bg-pastel-green transition-colors font-semibold text-gray-800">
                 $250
@@ -255,59 +220,12 @@ export default function GetInvolvedPage() {
               />
             </div>
             <Button variant="primary" size="lg" className="w-full">
-              Donate Now (Coming Soon)
+              Donate Now
             </Button>
-            <p className="text-sm text-gray-500 mt-4">
-              Online donations coming soon! In the meantime, please email{" "}
-              <a href="mailto:donate@pikids.org" className="text-pastel-green-dark hover:underline">
-                donate@pikids.org
-              </a>{" "}
-              or call (555) 123-4567 to make a donation.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Host a Workshop Section
-        - Purpose: Invite venues to host; outline logistics.
-        - Layout: Info + checklist and contact CTA.
-      */}
-      <section id="host" className="py-16 bg-white scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 bg-pastel-red-light px-4 py-2 rounded-full mb-4">
-                <span>🏠</span>
-                <span className="font-medium text-gray-800">Host a Workshop</span>
-              </div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Bring Pi Kids to Your Space
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Do you have a community center, library, school, or other space
-                where kids gather? Partner with us to host a Pi Kids workshop!
-              </p>
-              <ul className="space-y-3 mb-8">
-                <CheckItem text="We provide all equipment and curriculum" />
-                <CheckItem text="Trained volunteers lead the sessions" />
-                <CheckItem text="Flexible scheduling to fit your needs" />
-                <CheckItem text="Free for participants" />
-              </ul>
-              <Button href="/contact" variant="primary">
-                Contact Us to Host
-              </Button>
-            </div>
-            <div className="bg-pastel-red-light rounded-2xl p-8">
-              <div className="aspect-video bg-pastel-cream rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-6xl">🏢</span>
-                  <p className="mt-4 text-gray-600">Your space + our program</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Partner With Us Section
         - Purpose: Describe partnership types and collect inquiries.
@@ -426,11 +344,6 @@ export default function GetInvolvedPage() {
                 Submit Inquiry
               </Button>
             </form>
-            <div className="mt-6 text-center">
-              <Button href="#" variant="outline" size="sm">
-                Download Partnership Info Packet (PDF)
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -463,7 +376,7 @@ function RoleCard({
   time: string;
 }) {
   return (
-    <div className="bg-pastel-cream rounded-lg p-4">
+    <div className="bg-pastel-cream rounded-lg p-4">n
       <div className="flex justify-between items-start mb-2">
         <h4 className="font-semibold text-gray-800">{title}</h4>
         <span className="text-xs bg-pastel-green-light px-2 py-1 rounded-full text-gray-600">
@@ -501,6 +414,15 @@ function CheckItem({ text }: { text: string }) {
       </span>
       <span className="text-gray-700">{text}</span>
     </li>
+  );
+}
+
+function SkillItem({ text }: { text: string }) {
+  return (
+    <div className="flex items-start gap-3 bg-pastel-cream rounded-lg p-4">
+      <span className="text-pastel-green-dark font-bold mt-1">•</span>
+      <span className="text-gray-700">{text}</span>
+    </div>
   );
 }
 

@@ -19,10 +19,6 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             About Pi Kids
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Building a more equitable future by bringing technology education to
-            every child, regardless of their background.
-          </p>
         </div>
       </section>
 
@@ -52,23 +48,18 @@ export default function AboutPage() {
       <section className="py-16 bg-pastel-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
-            Our Story
+            Our Founder's Story
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-3xl mx-auto text-center">
             <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                Our Founder's Story
-              </h3>
-              <p className="text-gray-600 mb-6">
-                I was born in Queens, NY, but have lived in California since middle school. School districts in NY and CA that rank among the best are a privilege for me. As I was ready for school, my parents moved to Long Island, NY. Many parents move to better public school districts for their children. I asked my parents once. What motivates parents to move to better schools? Why are those schools better? Better school districts have better funding, my parents explain. With more funding, they have better teachers, guidance, and technology. School districts that were underfunded weren’t as good as those that were. Some areas lack funding. Lack of funding, etc. The second experience came through Racheal. She cleaned our Long Island house. When she was a little girl, she would help her mom clean the house, and then play with me. She was in middle school, I was in elementary school. Sometimes my mom brought her with her to pick me up from school. She would listen to me tell her stories about the auditorium, computers, library, holiday parties, and talk shows by big authors. She used to be amazed by my school stories. All of these weren’t at her school. Her school didn’t host any famous authors. I never believed her in elementary school. In my opinion, all schools should be the same. Mom was so happy when she called from New York and told her she was accepted! She gave me the example of Rachel, who had limited school resources, but made it to medical school despite it. Here I am again asking the same question! How about most of the country? Hard work pays off for some students, but not for others. Doesn’t every student deserve the same quality of public school education? It shouldn’t be based on where they were born! - Sayam De
-            </div>
-            <div className="bg-pastel-green-light rounded-2xl p-8">
-              <div className="aspect-video bg-pastel-cream rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-6xl">🚀</span>
-                  <p className="mt-4 text-gray-600">Our journey from 5 kids to 500+</p>
-                </div>
-              </div>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                I was born in Queens, NY, but have lived in California since middle school. School districts in NY and CA that rank among the best are a privilege for me.
+As I was ready for school, my parents moved to Long Island, NY. Many parents move to better public school districts for their children. I asked my parents once. What motivates parents to move to better schools? Why are those schools better? Better school districts have better funding, my parents explain. With more funding, they have better teachers, guidance, and technology. School districts that were underfunded weren’t as good as those that were. Some areas lack funding. Lack of funding, etc.
+The second experience came through Racheal. She cleaned our Long Island house. When she was a little girl, she would help her mom clean the house, and then play with me. She was in middle school, I was in elementary school. Sometimes my mom brought her with her to pick me up from school. She would listen to me tell her stories about the auditorium, computers, library, holiday parties, and talk shows by big authors. She used to be amazed by my school stories. All of these weren’t at her school. Her school didn’t host any famous authors. I never believed her in elementary school. In my opinion, all schools should be the same.
+Mom was so happy when she called from New York and told her she was accepted! She gave me the example of Rachel, who had limited school resources, but made it to medical school despite it.
+Here I am again asking the same question! How about most of the country? Hard work pays off for some students, but not for others. Doesn’t every student deserve the same quality of public school education? It shouldn’t be based on where they were born!
+              </p>
+              <p className="text-gray-600 italic">— Sayam De</p>
             </div>
           </div>
         </div>
@@ -90,15 +81,22 @@ export default function AboutPage() {
             <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">
               Founders
             </h3>
+            {/*
+              To add founder photos:
+              1. Place image files in `public/images/founders/` (example: `sayam.jpg`, `shlok.jpg`).
+              2. Use the `imageSrc` prop on `TeamCard`, e.g. `imageSrc="/images/founders/sayam.jpg"`.
+            */}
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <TeamCard
                 name="Sayam De"
                 title="Founder"
+                imageSrc="/images/sayam.jpg"
                 bio="I am passionate about the intersection of technology and business. In the past few years, my Python data projects on Raspberry Pi have won awards at the Contra Costa County Science and Engineering Fair. In order to bridge the US’s educational equity gap, I leveraged these skills and accomplishments. My program, Pi Kids, spreads technology initiatives to the next generation. Moreover, I’m a believer. LF member, I believe collaboration makes a difference!"
               />
               <TeamCard
                 name="Shlok Kulkarni"
                 title="Co-Founder"
+                imageSrc="/images/shlok.jpg"
                 bio="I am an entrepreneur, researcher, and biotechnology-enthusiast with extensive interest in gene sequencing and gene modification. Outside of school, I have done Taekwondo for around 9 years, and am currently a 2nd degree black belt. I am an amateur guitarist and enjoy playing in my free time. I also enjoy skateboarding."
               />
             </div>
@@ -115,38 +113,38 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Past Volunteers: recognizes prior service with years */}
+          {/* Past Volunteers: recognizes prior service */}
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-8 text-center">
               Past Volunteers
             </h3>
             <div className="bg-pastel-green-light rounded-2xl p-8">
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <PastVolunteer name="Shreyas Kommuri"/>
-                <PastVolunteer name="Rahul Racharia"/>
-                <PastVolunteer name="Manav Divakar"/>
-                <PastVolunteer name="Apoorva Kulshreshta"/>
-                <PastVolunteer name="Shreyan Biswas"/>
-                <PastVolunteer name="Sri Paturi"/>
-                <PastVolunteer name="Lalitha Kalle"/>
-                <PastVolunteer name="Rutvik Kollipara"/>
-                <PastVolunteer name="Jay Saluja"/>
-                <PastVolunteer name="Ayush Chackroborty"/>
-                <PastVolunteer name="Harika Chodavarapu"/>
-                <PastVolunteer name="Michelle Lee"/>
-                <PastVolunteer name="Emma Hongkham"/>
-                <PastVolunteer name="Maitri Singhal"/>
-                <PastVolunteer name="Shreyas Sharma"/>
-                <PastVolunteer name="Jai Velukuru"/>
-                <PastVolunteer name="Arshia Singh"/>
-                <PastVolunteer name="Arnab Datta Chowdhury"/>
-                <PastVolunteer name="Sanjay Darshan Ramkumar"/>
-                <PastVolunteer name="Spoorthi Bedadam"/>
-                <PastVolunteer name="Shreyas Potturu"/>
-                <PastVolunteer name="Saketh Potturu"/>
-                <PastVolunteer name="Hritvik Hooda"/>
-                <PastVolunteer name="Brindha Kumar"/>
-                <PastVolunteer name="Akshaj Chirathanagandla"/>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <PastVolunteer name="Shreyas Kommuri" />
+                <PastVolunteer name="Rahul Racharia" />
+                <PastVolunteer name="Manav Divakar" />
+                <PastVolunteer name="Apoorva Kulshreshta" />
+                <PastVolunteer name="Shreyan Biswas" />
+                <PastVolunteer name="Sri Paturi" />
+                <PastVolunteer name="Lalitha Kalle" />
+                <PastVolunteer name="Rutvik Kollipora" />
+                <PastVolunteer name="Jay Saluja" />
+                <PastVolunteer name="Ayush Chackroborty" />
+                <PastVolunteer name="Harika Chodavarapu" />
+                <PastVolunteer name="Michelle Lee" />
+                <PastVolunteer name="Emma Hongkham" />
+                <PastVolunteer name="Maitri Singhal" />
+                <PastVolunteer name="Shreyas Sharma" />
+                <PastVolunteer name="Jai Velukuru" />
+                <PastVolunteer name="Arshia Singh" />
+                <PastVolunteer name="Arnab Datta Chowdhury" />
+                <PastVolunteer name="Sanjay Darshan Ramkumar" />
+                <PastVolunteer name="Spoorthi Bedadam" />
+                <PastVolunteer name="Shreyas Potturu" />
+                <PastVolunteer name="Saketh Potturu" />
+                <PastVolunteer name="Hritvik Hooda" />
+                <PastVolunteer name="Brindha Kumar" />
+                <PastVolunteer name="Akshaj Chirathanagandla" />
               </div>
             </div>
           </div>
@@ -162,20 +160,21 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
             Previous Workshop Locations
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <PartnerLogo name="Boys & Girls Club of Oakland - Anna Marie Whalen Branch"/>
-            <PartnerLogo name="Seven Trees Library"/>
-            <PartnerLogo name="Henry Waldinger Memorial Library - Valley Stream, NY"/>
-            <PartnerLogo name="West Valley Library"/>
-            <PartnerLogo name="Bascom Library"/>
-            <PartnerLogo name="Educational Park Library"/>
-            <PartnerLogo name="Joyce Ellington Library"/>
-            <PartnerLogo name="Edenvale Branch Library"/>
-            <PartnerLogo name="Oakland Public Library"/>
-            <PartnerLogo name="Hayward Library"/>
-            <PartnerLogo name="Biblioteca Latinoamerica Library"/>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <PartnerLogo name="Boys & Girls Club of Oakland" href="https://www.bgcoakland.org/"/>
+            <PartnerLogo name="Seven Trees Library" href="https://www.sjpl.org/locations/seven-trees/"/>
+            <PartnerLogo name="Henry Waldinger Memorial Library" href="https://valleystreamlibrary.org/"/>
+            <PartnerLogo name="West Valley Library" href="https://www.sjpl.org/locations/west-valley/"/>
+            <PartnerLogo name="Bascom Library" href="https://www.sjpl.org/locations/bascom/"/>
+            <PartnerLogo name="Educational Park Library" href="https://www.sjpl.org/locations/educational-park/"/>
+            <PartnerLogo name="Joyce Ellington Library" href="https://www.sjpl.org/locations/joyce-ellington/"/>
+            <PartnerLogo name="Edenvale Branch Library" href="https://www.sjpl.org/locations/edenvale/"/>
+            <PartnerLogo name="Oakland Library" href="https://oaklandlibrary.org/"/>
+            <PartnerLogo name="Hayward Library" href="https://www.hayward-ca.gov/public-library"/>
+            <PartnerLogo name="Biblioteca Latinoamerica" href="https://www.sjpl.org/es/locations/biblioteca/"/>
           </div>
         </div>
+      </section>
 
       {/* CTA (Call To Action)
         - Purpose: Encourage visitors to get involved.
@@ -199,20 +198,26 @@ export default function AboutPage() {
 }
 
 // TeamCard: reusable profile card for founders/staff
-// Props: `name` (string), `title` (string), `bio` (string)
+// Props: `name` (string), `title` (string), `bio` (string), `imageSrc?` (optional)
 function TeamCard({
   name,
   title,
   bio,
+  imageSrc,
 }: {
   name: string;
   title: string;
   bio: string;
+  imageSrc?: string;
 }) {
   return (
     <div className="bg-pastel-green-light rounded-xl p-6 text-center">
-      <div className="w-24 h-24 mx-auto bg-pastel-cream rounded-full mb-4 flex items-center justify-center">
-        <span className="text-4xl">👤</span>
+      <div className="w-24 h-24 mx-auto bg-pastel-cream rounded-full mb-4 flex items-center justify-center overflow-hidden">
+        {imageSrc ? (
+          <img src={imageSrc} alt={`${name} photo`} className="w-full h-full object-cover" />
+        ) : (
+          <span className="text-4xl">👤</span>
+        )}
       </div>
       <h4 className="text-xl font-semibold text-gray-800">{name}</h4>
       <p className="text-pastel-green-dark font-medium mb-3">{title}</p>
@@ -222,12 +227,16 @@ function TeamCard({
 }
 
 // VolunteerCard: lightweight card for current volunteers
-// Props: `name` (string), `title` (role string)
-function VolunteerCard({ name, title }: { name: string; title: string }) {
+// Props: `name` (string), `title` (role string), `imageSrc?` (optional)
+function VolunteerCard({ name, title, imageSrc }: { name: string; title: string; imageSrc?: string }) {
   return (
     <div className="bg-pastel-cream rounded-xl p-4 text-center hover:shadow-md transition-shadow">
-      <div className="w-16 h-16 mx-auto bg-pastel-green-light rounded-full mb-3 flex items-center justify-center">
-        <span className="text-2xl">👤</span>
+      <div className="w-16 h-16 mx-auto bg-pastel-green-light rounded-full mb-3 flex items-center justify-center overflow-hidden">
+        {imageSrc ? (
+          <img src={imageSrc} alt={`${name} photo`} className="w-full h-full object-cover" />
+        ) : (
+          <span className="text-2xl">👤</span>
+        )}
       </div>
       <h4 className="font-semibold text-gray-800">{name}</h4>
       <p className="text-sm text-gray-600">{title}</p>
@@ -235,23 +244,28 @@ function VolunteerCard({ name, title }: { name: string; title: string }) {
   );
 }
 
-// PastVolunteer: acknowledges past volunteers and service years
-// Props: `name` (string), `years` (string range)
-function PastVolunteer({ name, years }: { name: string; years: string }) {
+// PastVolunteer: acknowledges past volunteers (names only)
+// Props: `name` (string)
+function PastVolunteer({ name }: { name: string }) {
   return (
-    <div className="bg-white rounded-lg p-4">
-      <p className="font-medium text-gray-800">{name}</p>
-      <p className="text-sm text-gray-500">{years}</p>
+    <div className="bg-white rounded-full px-4 py-2 shadow-sm hover:shadow-md transition-shadow">
+      <p className="font-medium text-gray-800 text-sm">{name}</p>
     </div>
   );
 }
 
 // PartnerLogo: placeholder name-only logo tile; swap to image later
 // Props: `name` (string)
-function PartnerLogo({ name }: { name: string }) {
+function PartnerLogo({ name, href }: { name: string; href?: string }) {
   return (
     <div className="bg-white rounded-xl p-6 flex items-center justify-center aspect-video hover:shadow-md transition-shadow">
-      <p className="text-gray-600 font-medium text-center">{name}</p>
+      {href ? (
+        <a href={href} target="_blank" rel="noopener noreferrer" className="text-gray-600 font-medium text-center hover:underline">
+          {name}
+        </a>
+      ) : (
+        <p className="text-gray-600 font-medium text-center">{name}</p>
+      )}
     </div>
   );
 }
@@ -273,7 +287,7 @@ function StatCard({
     green: "bg-pastel-green-light",
     yellow: "bg-pastel-yellow-light",
     red: "bg-pastel-red-light",
-  };
+  } as const;
 
   return (
     <div className="text-center">

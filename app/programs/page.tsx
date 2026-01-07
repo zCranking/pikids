@@ -16,10 +16,6 @@ export default function ProgramsPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
             Our Programs
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hands-on technology workshops designed to inspire creativity and
-            build real-world skills in young learners.
-          </p>
         </div>
       </section>
 
@@ -34,40 +30,13 @@ export default function ProgramsPage() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <WorkshopCard
-              name="Intro to Coding with Scratch"
-              ageGroup="Ages 8-10"
-              dates="January 15 - March 15, 2025"
-              location="Community Center, Main St"
-              description="Learn the basics of programming through fun, interactive block-based coding. Create animations, games, and stories!"
-              skills={["Block coding", "Logic", "Creativity", "Problem-solving"]}
-              status="open"
-            />
-            <WorkshopCard
-              name="Build Your First Robot"
-              ageGroup="Ages 11-14"
-              dates="February 1 - April 1, 2025"
-              location="Public Library, Downtown"
-              description="Construct and program a simple robot using Raspberry Pi and sensors. Learn about electronics, motors, and automation."
-              skills={["Robotics", "Python basics", "Electronics", "Engineering"]}
-              status="open"
-            />
-            <WorkshopCard
-              name="Game Development Basics"
-              ageGroup="Ages 12-16"
-              dates="March 1 - May 1, 2025"
-              location="Boys & Girls Club"
-              description="Design and build your own video games using Python and Pygame. Learn game logic, graphics, and sound."
-              skills={["Python", "Game design", "Graphics", "Sound"]}
-              status="coming-soon"
-            />
-            <WorkshopCard
-              name="Web Design for Kids"
-              ageGroup="Ages 10-14"
-              dates="April 1 - June 1, 2025"
-              location="Tech Hub, Oak Street"
-              description="Create your own websites using HTML, CSS, and basic JavaScript. Build a portfolio to showcase your work!"
-              skills={["HTML", "CSS", "JavaScript basics", "Design"]}
-              status="coming-soon"
+              name="Raspberry Pi Coding Camp"
+              ageGroup="Ages 8-13"
+              dates="December 29, 2025 - January 2, 2026"
+              location="Seven Trees Branch Library - 3590 Cas Dr, San Jose, CA 95111"
+              description="Learn the fundementals of Raspberry Pi (Mini computers!). In this fun and interactive 4-day class, participants will learn the foundations of coding, build their own mini-games, and develop real problem-solving skills."
+              skills={["Python", "Logic", "Games", "Problem-solving"]}
+              status="full"
             />
           </div>
         </div>
@@ -89,38 +58,8 @@ export default function ProgramsPage() {
               Photo Gallery
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <GalleryImage caption="Fall 2024 Coding Camp" />
-              <GalleryImage caption="Robot Competition" />
-              <GalleryImage caption="Summer Workshop" />
-              <GalleryImage caption="Graduation Ceremony" />
-              <GalleryImage caption="Parent Night" />
-              <GalleryImage caption="Guest Speaker Event" />
-              <GalleryImage caption="Project Showcase" />
-              <GalleryImage caption="Team Building Day" />
-            </div>
-          </div>
-
-          {/* Student Projects: highlight exemplar student work */}
-          <div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-6">
-              Student Project Showcases
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <ProjectCard
-                title="Weather Station"
-                student="Alex, Age 13"
-                description="A Raspberry Pi-powered weather station that tracks temperature, humidity, and displays data on an LCD screen."
-              />
-              <ProjectCard
-                title="Traffic Light Simulator"
-                student="Jamie, Age 11"
-                description="An LED-based traffic light that changes colors on a timer, teaching the basics of circuit design."
-              />
-              <ProjectCard
-                title="Space Invaders Clone"
-                student="Jordan, Age 14"
-                description="A classic arcade game recreated using Python and Pygame, complete with sound effects and high scores."
-              />
+              <GalleryImage caption="Boys & Girls Club of Oakland Summer Camp 2025" />
+              <GalleryImage caption="Boys & Girls Club of Oakland Summer Camp 2024" />
             </div>
           </div>
         </div>
@@ -139,16 +78,15 @@ export default function ProgramsPage() {
                   Curriculum Preview
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Our curriculum is designed by experienced educators and
-                  technology professionals to be engaging, accessible, and
-                  effective. Download our overview to learn more about what we
+                  Our curriculum is designed to be engaging, accessible, and
+                  adaptive. Download our overview to learn more about what we
                   teach.
                 </p>
                 <ul className="space-y-3 mb-8">
                   <CurriculumPoint text="Project-based learning approach" />
                   <CurriculumPoint text="Age-appropriate content for all levels" />
                   <CurriculumPoint text="Focus on creativity and problem-solving" />
-                  <CurriculumPoint text="Real-world applications and skills" />
+                  <CurriculumPoint text="Adapts based on interest level" />
                 </ul>
                 <Button href="#" variant="primary">
                   Download Curriculum Overview (PDF)
@@ -163,26 +101,6 @@ export default function ProgramsPage() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA: encourage registration and volunteer participation */}
-      <section className="py-20 bg-gradient-to-r from-pastel-yellow to-pastel-green">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Ready to Enroll Your Child?
-          </h2>
-          <p className="text-xl text-gray-700 mb-8">
-            Join hundreds of students learning valuable tech skills.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" variant="primary" size="lg">
-              Register for a Workshop
-            </Button>
-            <Button href="/get-involved" variant="outline" size="lg">
-              Volunteer or Partner
-            </Button>
           </div>
         </div>
       </section>

@@ -100,7 +100,7 @@ export default function ContactPage() {
                   Send Message
                 </Button>
                 <p className="text-sm text-gray-500 text-center">
-                  We&apos;ll get back to you within 24-48 hours.
+                  We&apos;ll get back to you ASAP.
                 </p>
               </form>
             </div>
@@ -133,110 +133,6 @@ export default function ContactPage() {
                   content="123 Education Way, Learning City, CA 90210"
                 />
               </div>
-
-              {/* Hours: office availability summary */}
-              <div className="bg-pastel-cream rounded-xl p-6 mb-8">
-                <h3 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
-                  <span>🕐</span> Office Hours
-                </h3>
-                <div className="space-y-2 text-gray-600">
-                  <p>Monday - Friday: 9:00 AM - 5:00 PM PST</p>
-                  <p>Saturday: 10:00 AM - 2:00 PM PST (Workshop days)</p>
-                  <p>Sunday: Closed</p>
-                </div>
-              </div>
-
-              {/* Social Links: external profiles with accessible icons */}
-              <div className="bg-pastel-green-light rounded-xl p-6">
-                <h3 className="font-semibold text-gray-800 mb-4">
-                  Follow Us
-                </h3>
-                <div className="flex gap-4">
-                  <SocialLink
-                    name="Instagram"
-                    href="https://instagram.com"
-                    icon="instagram"
-                  />
-                  <SocialLink
-                    name="Facebook"
-                    href="https://facebook.com"
-                    icon="facebook"
-                  />
-                  <SocialLink
-                    name="LinkedIn"
-                    href="https://linkedin.com"
-                    icon="linkedin"
-                  />
-                  <SocialLink
-                    name="Twitter"
-                    href="https://twitter.com"
-                    icon="twitter"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Signup
-        - Purpose: Collect emails for updates; form is non-functional
-          placeholder pending backend integration.
-      */}
-      <section className="py-16 bg-pastel-yellow-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl p-8 md:p-12 text-center">
-            <div className="w-16 h-16 bg-pastel-yellow rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="text-3xl">📬</span>
-            </div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Stay in the Loop
-            </h2>
-            <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-              Subscribe to our newsletter for updates on workshops, volunteer
-              opportunities, and ways to support our mission.
-            </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-full border border-gray-300 focus:ring-2 focus:ring-pastel-green focus:border-transparent"
-                required
-              />
-              <Button type="submit" variant="primary">
-                Subscribe
-              </Button>
-            </form>
-            <p className="text-xs text-gray-500 mt-4">
-              We respect your privacy. Unsubscribe at any time.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Map Placeholder
-        - Purpose: Show location and provide directions link.
-        - Replace with embedded map when available.
-      */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-            Find Us
-          </h2>
-          <div className="bg-pastel-cream rounded-2xl aspect-video flex items-center justify-center">
-            <div className="text-center">
-              <span className="text-6xl">🗺️</span>
-              <p className="mt-4 text-gray-600">
-                123 Education Way, Learning City, CA 90210
-              </p>
-              <a 
-                href="https://maps.google.com/?q=123+Education+Way+Learning+City+CA+90210"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 text-pastel-green-dark hover:underline"
-              >
-                Get Directions →
-              </a>
             </div>
           </div>
         </div>
