@@ -58,48 +58,9 @@ export default function ProgramsPage() {
               Photo Gallery
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <GalleryImage caption="Boys & Girls Club of Oakland Summer Camp 2025" />
-              <GalleryImage caption="Boys & Girls Club of Oakland Summer Camp 2024" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Curriculum Preview
-        - Purpose: Explain pedagogy and share downloadable overview.
-        - Note: Replace placeholder with real download link.
-      */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-pastel-green-light rounded-2xl p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                  Curriculum Preview
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Our curriculum is designed to be engaging, accessible, and
-                  adaptive. Download our overview to learn more about what we
-                  teach.
-                </p>
-                <ul className="space-y-3 mb-8">
-                  <CurriculumPoint text="Project-based learning approach" />
-                  <CurriculumPoint text="Age-appropriate content for all levels" />
-                  <CurriculumPoint text="Focus on creativity and problem-solving" />
-                  <CurriculumPoint text="Adapts based on interest level" />
-                </ul>
-                <Button href="#" variant="primary">
-                  Download Curriculum Overview (PDF)
-                </Button>
-              </div>
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="aspect-[3/4] bg-pastel-cream rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <span className="text-6xl">📚</span>
-                    <p className="mt-4 text-gray-600">Curriculum Preview</p>
-                  </div>
-                </div>
-              </div>
+              <GalleryImage caption="Seven Trees Library 2025" />
+              <GalleryImage caption="Boys & Girls Club of Oakland 2025" />
+              <GalleryImage caption="Boys & Girls Club of Oakland 2024" />
             </div>
           </div>
         </div>

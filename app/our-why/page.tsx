@@ -107,22 +107,12 @@ export default function OurWhyPage() {
             Our Solution
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-            <div className="order-2 md:order-1">
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <div className="aspect-video bg-pastel-cream rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <span className="text-6xl">🌟</span>
-                    <p className="mt-4 text-gray-600">Hands-on learning in action</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
+          <div className="max-w-3xl mx-auto mb-12">
+            <div className="text-center">
               <h3 className="text-2xl font-semibold text-gray-800 mb-6">
                 What Makes Pi Kids Different
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-4 inline-block text-left">
                 <SolutionPoint
                   title="Accessibility First"
                   description="Free workshops in community spaces where kids already go."
