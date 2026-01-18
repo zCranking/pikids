@@ -52,18 +52,18 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Workshop Photo Cards */}
             <div className="bg-pastel-green-light rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-6xl">👨‍💻</span>
+              <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <img src="/ourimpactinaction1.jpg" alt="Impact Action 1" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="bg-pastel-yellow-light rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-6xl">🎓</span>
+              <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <img src="/ourimpactinaction2.jpg" alt="Impact Action 2" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="bg-pastel-red-light rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-6xl">🤝</span>
+              <div className="aspect-square bg-pastel-cream rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <img src="/boysandgirlscluboakland2024.jpg" alt="Boys & Girls Club Oakland" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

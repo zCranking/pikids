@@ -90,13 +90,13 @@ Here I am again asking the same question! How about most of the country? Hard wo
               <TeamCard
                 name="Sayam De"
                 title="Founder"
-                imageSrc="/images/sayam.jpg"
+                imageSrc="/sayamfounder.jpg"
                 bio="I am passionate about the intersection of technology and business. In the past few years, my Python data projects on Raspberry Pi have won awards at the Contra Costa County Science and Engineering Fair. In order to bridge the US’s educational equity gap, I leveraged these skills and accomplishments. My program, Pi Kids, spreads technology initiatives to the next generation. Moreover, I’m a believer. LF member, I believe collaboration makes a difference!"
               />
               <TeamCard
                 name="Shlok Kulkarni"
                 title="Co-Founder"
-                imageSrc="/images/shlok.jpg"
+                imageSrc="/shlokcofounder.jpg"
                 bio="I am an entrepreneur, researcher, and biotechnology-enthusiast with extensive interest in gene sequencing and gene modification. Outside of school, I have done Taekwondo for around 9 years, and am currently a 2nd degree black belt. I am an amateur guitarist and enjoy playing in my free time. I also enjoy skateboarding."
               />
             </div>
@@ -108,8 +108,8 @@ Here I am again asking the same question! How about most of the country? Hard wo
               Current Volunteers
             </h3>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              <VolunteerCard name="Ayush Talapatra" title="President" />
-              <VolunteerCard name="Rajveer Grover" title="Workshop Instructor" />
+              <VolunteerCard name="Ayush Talapatra" title="President" imageSrc="/ayushpresident.jpg" />
+              <VolunteerCard name="Rajveer Grover" title="Workshop Instructor" imageSrc="/rajveerworkshopinstructor.heic" />
             </div>
           </div>
 
