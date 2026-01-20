@@ -239,11 +239,11 @@ function VolunteerCard({ name, title }: { name: string; title: string }) {
 
 // PastVolunteer: acknowledges past volunteers and service years
 // Props: `name` (string), `years` (string range)
-function PastVolunteer({ name, years }: { name: string; years: string }) {
+function PastVolunteer({ name, years }: { name: string; years?: string }) {
   return (
     <div className="bg-white rounded-lg p-4">
       <p className="font-medium text-gray-800">{name}</p>
-      <p className="text-sm text-gray-500">{years}</p>
+      {years && <p className="text-sm text-gray-500">{years}</p>}
     </div>
   );
 }
