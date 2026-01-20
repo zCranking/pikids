@@ -197,7 +197,6 @@ export default function AboutPage() {
       </section>
     </div>
   );
-}
 
 // TeamCard: reusable profile card for founders/staff
 // Props: `name` (string), `title` (string), `bio` (string)
