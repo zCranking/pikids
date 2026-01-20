@@ -177,6 +177,7 @@ export default function AboutPage() {
             <PartnerLogo name="Biblioteca Latinoamerica Library"/>
           </div>
         </div>
+        </section>
 
       {/* CTA (Call To Action)
         - Purpose: Encourage visitors to get involved.
@@ -197,6 +198,7 @@ export default function AboutPage() {
       </section>
     </div>
   );
+}
 
 // TeamCard: reusable profile card for founders/staff
 // Props: `name` (string), `title` (string), `bio` (string)
