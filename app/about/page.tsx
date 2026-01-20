@@ -195,6 +195,7 @@ Here I am again asking the same question! How about most of the country? Hard wo
       </section>
     </div>
   );
+}
 
 // TeamCard: reusable profile card for founders/staff
 // Props: `name` (string), `title` (string), `bio` (string), `imageSrc?` (optional)
